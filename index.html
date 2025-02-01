@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>my own webpage</title>
-    <link href="css/style.css"rel="stylesheet">
     <meta charset="UTF-8">
+
+    <title> like linktree</title>
+
+    <style>
+      html {
+        min-height: 100%;
+      }
+
+      * {
+        border: 1px red dashed;
+      }
+      body {
+        min-height: 100%; 
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: radial-gradient(circle at 50% 60%, #ffdf42, #ffc83b, #ffb034, #ff972d, #ff7c27, #ff5f20, #ff4119, #ff2212);
+        color: white
+      }
+      a {
+        color: white; 
+      }
+
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+
+      .item {
+        background-color: rgba(110, 19, 87, 0.5);
+      }
+
+      .main-container {
+        width: 640px;
+        margin: auto;
+      }
+
+    </style>
   </head>
 
   <body>
-    <h1>My homepage</h1>
-    <h2>my link in bio</h2>
-    <div class="main-container"></div>
-    <div class="image-row"> <img class="avatar-image" src="pic.png" alt=adriana pic</div>
-    <style>
-    .avatar-image {
-      width: 128px;
-      height: 128px;
-      object-fit: cover;
-      border-radius: 128px;
-    }
-    </style>
-    <div class="name-row"> Adriana Medrano</div>
-    <div class="social-icons-row">
-      <a href="https://github.com/Amedrano00" target="_blank">Github</a>
-      <a href="https://www.instagram.com/a.mp1000409" targer="_blank">IG </a>
-     
-    </div>
-    <div class="links-row">
-      <div class="items">
-        <img src="Baking.jpg">
-        <a target="_blank" href="https://cloudykitchen.com/">
-          Some baking
-        </a>
-    </div>
-    <div>
-      <di class="items">
-        <img src="ghost.jpg">
-        <a target="_blank" href="https://www.youtube.com/channel/UCircJf-FlToBNjuy9xG-i5A">
-          Some BOOS
-          </a>
-    </div>
-    <div>
-      <img src="catpic.png">
-      <a target="_blank" href="https://cats.com/orange-tabby-cats">
-        Gatos
-      </a>
-    </div>
-    
-  </body>
+    <div class="main-container">
+      <div class="image-row">
+        <img class="avatar-image" src="/thumbnail/pic.png" alt="pic" class="avatar-image">
+      </div>
 
+      <div class="name-row">
+        Adriana Medrano
+        </div>
+
+        <div class="social-icon-row">
+          <a href="https://github.com/Amedrano00" target="_blank">
+            Github
+          </a>
+          <a href="https://www.instagram.com/a.mp1000409" target="_blank">
+            Instagram
+          </a>
+        </div>
+
+        <div class="links-row">
+          <div class="item">
+            <img class="thumbnail" src="/thumbnail/Baking.jpg">
+            <a target="_blank" href="https://cloudykitchen.com/">
+              some baking
+            </a>
+            </div>
+
+        <div class="item">
+          <img class="thumbnail" src="/thumbnail/ghost.jpg">
+          <a target="_blank" href="https://www.youtube.com/channel/UCircJf-FlToBNjuy9xG-i5A">
+              Espookies 
+          </a>
+
+        </div>
+
+        <div class="item">
+          <img class="thumbnail" src="/thumbnail/catpic.png">
+          <a target="_blank" href="https://cats.com/orange-tabby-cats">
+            GATOSS
+          </a>
+        </div>   
+
+          </div>
+
+        </div>
+
+
+  </body>
 </html>
