@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>my own webpage</title>
+    <link href="css/style.css"rel="stylesheet">
     <meta charset="UTF-8">
   </head>
 
   <body>
-    <style>
-      * {
-        border: 1px red dashed;
-      }
-    </style>
     <h1>My homepage</h1>
     <h2>my link in bio</h2>
     <div class="main-container"></div>
-    <div class="image-row"> <img src="pic.png" alt=adriana pic</div>
+    <div class="image-row"> <img class="avatar-image" src="pic.png" alt=adriana pic</div>
+    <style>
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+    </style>
     <div class="name-row"> Adriana Medrano</div>
     <div class="social-icons-row">
       <a href="https://github.com/Amedrano00" target="_blank">Github</a>
-      <a href="https://www.instagram.com/a.mp1000409" targer="_blank">IG</a>
+      <a href="https://www.instagram.com/a.mp1000409" targer="_blank">IG </a>
      
     </div>
     <div class="links-row">
